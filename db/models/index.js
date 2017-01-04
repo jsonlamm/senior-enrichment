@@ -1,3 +1,4 @@
+// should be moved to server
 'use strict';
 
 // Require all the models
@@ -5,5 +6,7 @@
 	// This works if we all use the same Sequelize instance (instantiated in and exported from `/db/index.js`)
 
 const User = require('./user')
+const Student = require('./student')
+const Campus = require('./campus')
 
-module.exports = {User}
+module.exports = {User, Student, Campus}
